@@ -17,12 +17,6 @@ namespace Map_Custom_Shapes
         public MainPage()
         {
             InitializeComponent();
-            var shapeLayer = this.Maps.Layers[0] as ShapeFileLayer;
-            shapeLayer.SelectedItems.CollectionChanged += (sender, e) =>
-            {
-                UpdateSelection(shapeLayer);
-            };
-
         }
         private void MapsTicketBooking_ShapeSelectionChanged(object sender, ShapeSelectedEventArgs e)
         {
